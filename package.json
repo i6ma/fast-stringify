@@ -73,6 +73,7 @@
   },
   "scripts": {
     "benchmark": "NODE_ENV=production BABEL_ENV=benchmark babel src --out-dir lib --no-comments && node benchmark/index.js",
+    "benchmark:updateReadme": "npm run benchmark updateReadme",
     "build": "NODE_ENV=production rollup -c",
     "clean": "npm run clean:es && npm run clean:lib && npm run clean:dist",
     "clean:dist": "rimraf dist",
